@@ -1,0 +1,6 @@
+<odoo>
+    <data>
+        <menuiteam id="travel_name" name="Travel"/>
+        <menuiteam id="travel"
+    </data>
+</odoo>
