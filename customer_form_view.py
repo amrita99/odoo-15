@@ -15,23 +15,5 @@ class ResPartner(models.Model):
             if record.dob:
                 customer_age = relativedelta(date.today(), record.dob).years
                 record.customer_age = customer_age
-    # def get_age_from_customer(self):
-        # for record in self:
-        #     if record.dob:
-        #         dt = date.today()
-        #         dob = record.dob
-        #         dt3 = relativedelta(dt, dob)
-        #         record.customer_age = dt3.years
-
-     #
-     # def get_age_from_customer(self):
-     #    for record in self:
-     #        if record.dob:
-     #            customer_age = relativedelta(date.today(), record.dob).year
-     #            record.customer_age = customer_age
-
-
-
-
 
 
