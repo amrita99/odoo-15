@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_stock_location_form_inherit" model="ir.ui.view">
+        <field name="name">stock.location.form.view.inherit</field>
+        <field name="model">stock.location</field>
+        <field name="inherit_id" ref="stock.view_location_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group/group[1]" position="after">
+                <group name="col-2">
+                        <group string="Stock Valuation Account">
+                            <field name="stock_valuation_account_id"/>
+                            <field name="stock_input_account_id"/>
+                            <field name="stock_output_account_id"/>
+                        </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
