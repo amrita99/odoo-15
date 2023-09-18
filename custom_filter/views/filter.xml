@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_account_move_filter_search_account_move" model="ir.ui.view">
+        <field name="name">Search</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_account_invoice_filter"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="invoice_line_ids" string="Passenger name"
+                       filter_domain="[('invoice_line_ids.pax_name','ilike',self)]"/>
+                <field name = "invoice_line_ids"  string="Ticket Number" filter_domain="[('invoice_line_ids.doc_number','ilike',self)]"/>
+            </field>
+        </field>
+    </record>
+</odoo>
+
